@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_margin="@dimen/margin10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nameProvinsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama provinsi"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin10"
+        app:layout_constraintTop_toBottomOf="@id/nameProvinsi"
+        android:background="@color/lightGray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
