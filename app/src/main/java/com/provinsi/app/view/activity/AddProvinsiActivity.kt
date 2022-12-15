@@ -74,6 +74,9 @@ class AddProvinsiActivity : BaseActivity() {
 
                                     toast(data?.messages?.success.toString())
                                 }
+
+                                val intent = Intent(this, HomeActivity::class.java)
+                                startActivity(intent)
                             },
                             {
                                 toast("Gagal memproses data, terjadi gangguan server")
@@ -120,6 +123,9 @@ class AddProvinsiActivity : BaseActivity() {
 
                                         toast(data?.messages?.success.toString())
                                     }
+
+                                    val intent = Intent(this, HomeActivity::class.java)
+                                    startActivity(intent)
                                 },
                                 {
                                     toast("Gagal memproses data, terjadi gangguan server")
